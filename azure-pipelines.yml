@@ -22,6 +22,6 @@ steps:
     resourceGroupName: 'workspacek8bonita'
     location: 'East US 2'
     templateLocation: 'Linked artifact'
-    csmFile: './k8s/k8loganalytics/workspace-template.json'
-    csmParametersFile: './k8s/k8loganalytics/workspace-parameters.json'
+    csmFile: './k8loganalytics/workspace-template.json'
+    csmParametersFile: './k8loganalytics/workspace-parameters.json'
     deploymentMode: 'Incremental'
