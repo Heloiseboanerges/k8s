@@ -33,8 +33,6 @@ steps:
     scriptLocation: 'inlineScript'
     inlineScript: |
       az account set -s "Heloise Visual Studio"
-      appName="k8prueba"
-      az ad app create \
-      --display-name $appName \ 
-      --homepage "http://localhost/$appName"
+      appName="k8prueba" 
+      az ad app create --display-name $appName --homepage "http://localhost/$appName"
     useGlobalConfig: true
