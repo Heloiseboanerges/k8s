@@ -1,0 +1,33 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "name": {
+            "value": "Vnetk8"
+        },
+        "resourceGroup": {
+            "value": "zmxs1zu2rsgvnet001"
+        },
+        "location": {
+            "value": "eastus2"
+        },
+        "addressPrefix": {
+            "value": "192.168.0.0/21"
+        },
+        "subnetName1": {
+            "value": "k8"
+        },
+        "subnetAddressPrefix1": {
+            "value": "192.168.0.0/23"
+        },
+        "subnetName2": {
+            "value": "database"
+        },
+        "subnetAddressPrefix2": {
+            "value": "192.168.2.0/24"
+        },
+        "enableDdosProtection": {
+            "value": false
+        }
+    }
+}
