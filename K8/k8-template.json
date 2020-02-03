@@ -112,10 +112,6 @@
                 "description": "Boolean flag to turn on and off of VM scale sets"
             }
         },
-        "aadSessionKey": {
-            "type": "securestring",
-            "defaultValue": ""
-        },
         "enableHttpApplicationRouting": {
             "type": "bool",
             "defaultValue": true,
@@ -219,8 +215,7 @@
                 ],
                 "servicePrincipalProfile": {
                     "ClientId": "[parameters('servicePrincipalClientId')]",
-                    "Secret": "[parameters('servicePrincipalClientSecret')]",
-                    "aadSessionKey": "[parameters('aadSessionKey')]"
+                    "Secret": "[parameters('servicePrincipalClientSecret')]"
                 },
                 "networkProfile": {
                     "loadBalancerSku": "standard",

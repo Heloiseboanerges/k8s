@@ -52,9 +52,6 @@
     "windowsProfile": {
       "value": "true"
     },
-    "aadSessionKey": {
-      "value": null
-    },
     "enableHttpApplicationRouting": {
       "value": true
     },
