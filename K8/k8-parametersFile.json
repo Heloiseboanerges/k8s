@@ -1,0 +1,92 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "resourceName": {
+      "value": "bonitaonk8"
+    },
+    "location": {
+      "value": "eastus2"
+    },
+    "dnsPrefix": {
+      "value": "bonitaonk8"
+    },
+    "osDiskSizeGB": {
+      "value": null
+    },
+    "agentCount": {
+      "value": 1
+    },
+    "agentVMSize": {
+      "value": "Standard_DS2_v2"
+    },
+    "servicePrincipalClientId": {
+      "value": "8cfd2099-7fc0-49f9-9417-71279a532ad2"
+    },
+    "servicePrincipalClientSecret": {
+      "reference": {
+        "keyVault": {
+          "id": "/subscriptions/714f1d31-e6fc-4955-acef-4e261636a95e/resourceGroups/key_vault/providers/Microsoft.KeyVault/vaults/keys-secrets"
+        },
+        "secretName": "8cfd2099-7fc0-49f9-9417-71279a532ad2"
+      }
+    },
+    "osType": {
+      "value": "Linux"
+    },
+    "kubernetesVersion": {
+      "value": "1.15.7"
+    },
+    "networkPlugin": {
+      "value": "azure"
+    },
+    "maxPods": {
+      "value": 30
+    },
+    "enableRBAC": {
+      "value": true
+    },
+    "vmssNodePool": {
+      "value": true
+    },
+    "windowsProfile": {
+      "value": null
+    },
+    "aadSessionKey": {
+      "value": null
+    },
+    "enableHttpApplicationRouting": {
+      "value": true
+    },
+    "enableOmsAgent": {
+      "value": true
+    },
+    "workspaceRegion": {
+      "value": "eastus2"
+    },
+    "workspaceName": {
+      "value": "k8clusterbonita3"
+    },
+    "omsWorkspaceId": {
+      "value": "/subscriptions/714f1d31-e6fc-4955-acef-4e261636a95e/resourcegroups/workspacek8bonita/providers/microsoft.operationalinsights/workspaces/k8clusterbonita3"
+    },
+    "omsSku": {
+      "value": "standalone"
+    },
+    "principalId": {
+      "value": "25ea2d46-1bb4-46ce-9aad-210b1053fa55"
+    },
+    "vnetSubnetID": {
+      "value": "/subscriptions/714f1d31-e6fc-4955-acef-4e261636a95e/resourceGroups/zmxs1zu2rsgvnet001/providers/Microsoft.Network/virtualNetworks/Vnetk8/subnets/k8"
+    },
+    "serviceCidr": {
+      "value": "10.0.0.0/21"
+    },
+    "dnsServiceIP": {
+      "value": "10.0.0.10"
+    },
+    "dockerBridgeCidr": {
+      "value": "172.17.0.1/28"
+    }
+  }
+}

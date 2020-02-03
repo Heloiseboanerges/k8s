@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "name": {
-            "value": "k8clusterbonita2"
+            "value": "k8clusterbonita3"
         },
         "location": {
             "value": "eastus2"
