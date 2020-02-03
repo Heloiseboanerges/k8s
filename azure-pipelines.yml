@@ -60,6 +60,6 @@ steps:
     resourceGroupName: 'zmxs1zu2rsgbonitacrit001'
     location: 'East US 2'
     templateLocation: 'Linked artifact'
-    csmFile: './k8/k8-template'
-    csmParametersFile: './k8/k8-parametersFile'
+    csmFile: './k8/k8-template.json'
+    csmParametersFile: './k8/k8-parametersFile.json'
     deploymentMode: 'Incremental'

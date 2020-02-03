@@ -65,10 +65,10 @@
       "value": "eastus2"
     },
     "workspaceName": {
-      "value": "k8clusterbonita3"
+      "value": "k8clusterbonita4"
     },
     "omsWorkspaceId": {
-      "value": "/subscriptions/714f1d31-e6fc-4955-acef-4e261636a95e/resourcegroups/workspacek8bonita/providers/microsoft.operationalinsights/workspaces/k8clusterbonita3"
+      "value": "/subscriptions/714f1d31-e6fc-4955-acef-4e261636a95e/resourcegroups/workspacek8bonita/providers/microsoft.operationalinsights/workspaces/k8clusterbonita4"
     },
     "omsSku": {
       "value": "standalone"
