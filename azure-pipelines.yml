@@ -26,12 +26,12 @@ steps:
     csmParametersFile: './k8loganalytics/workspace-parameters.json'
     deploymentMode: 'Incremental'
 
-- task: AzureCLI@2
-  inputs:
-    azureSubscription: 'Conexion_k8s'
-    scriptType: 'bash'
-    scriptLocation: 'inlineScript'
-    inlineScript: |
-      az account set -s "Heloise Visual Studio" 
-      az ad app create --display-name k8prueba --homepage "http://localhost/k8prueba"
-    useGlobalConfig: true
+#- task: AzureCLI@2
+ # inputs:
+  #  azureSubscription: 'Conexion_k8s'
+   # scriptType: 'bash'
+    #scriptLocation: 'inlineScript'
+    #inlineScript: |
+     # az account set -s "Heloise Visual Studio" 
+      #az ad app create --display-name k8prueba --homepage "http://localhost/k8prueba"
+    # useGlobalConfig: true
