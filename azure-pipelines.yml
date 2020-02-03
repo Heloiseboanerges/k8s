@@ -46,6 +46,6 @@ steps:
     resourceGroupName: 'zmxs1zu2rsgvnet001'
     location: 'East US 2'
     templateLocation: 'Linked artifact'
-    csmFile: './k8loganalytics/workspace-template.json'
-    csmParametersFile: './k8loganalytics/workspace-parameters.json'
+    csmFile: './k8vnet/vnet-template.json'
+    csmParametersFile: './k8vnet/vnet-parameters.json'
     deploymentMode: 'Incremental'
