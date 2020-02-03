@@ -14,17 +14,17 @@ pool:
 steps:
 - task: AzureResourceManagerTemplateDeployment@3
 #deployment of the log Analytic worskpace
-  inputs:
-    deploymentScope: 'Resource Group'
-    azureResourceManagerConnection: 'Conexion_k8s'
-    subscriptionId: '714f1d31-e6fc-4955-acef-4e261636a95e'
-    action: 'Create Or Update Resource Group'
-    resourceGroupName: 'workspacek8bonita'
-    location: 'East US 2'
-    templateLocation: 'Linked artifact'
-    csmFile: './k8loganalytics/workspace-template.json'
-    csmParametersFile: './k8loganalytics/workspace-parameters.json'
-    deploymentMode: 'Incremental'
+  # inputs:
+    # deploymentScope: 'Resource Group'
+    # azureResourceManagerConnection: 'Conexion_k8s'
+    # subscriptionId: '714f1d31-e6fc-4955-acef-4e261636a95e'
+    # action: 'Create Or Update Resource Group'
+    # resourceGroupName: 'workspacek8bonita'
+    # location: 'East US 2'
+    # templateLocation: 'Linked artifact'
+    # csmFile: './k8loganalytics/workspace-template.json'
+    #csmParametersFile: './k8loganalytics/workspace-parameters.json'
+    # deploymentMode: 'Incremental'
 
 #- task: AzureCLI@2
  # inputs:
@@ -60,6 +60,6 @@ steps:
     resourceGroupName: 'zmxs1zu2rsgbonitacrit001'
     location: 'East US 2'
     templateLocation: 'Linked artifact'
-    csmFile: './k8/k8-template.json'
-    csmParametersFile: './k8/k8-parametersFile.json'
+    csmFile: './K8/k8-template.json'
+    csmParametersFile: './K8/k8-parametersFile.json'
     deploymentMode: 'Incremental'
