@@ -36,6 +36,7 @@ steps:
       #az ad app create --display-name k8prueba --homepage "http://localhost/k8prueba"
     # useGlobalConfig: true
 
+
 - task: AzureResourceManagerTemplateDeployment@3
 #deployment of the VNET for CNI network mapping on the pods
   inputs:
@@ -49,6 +50,15 @@ steps:
     csmFile: './k8vnet/vnet-template.json'
     csmParametersFile: './k8vnet/vnet-parameters.json'
     deploymentMode: 'Incremental'
+
+- task: AzureCLI@2
+   inputs:
+    azureSubscription: 'Conexion_k8s'
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    inlineScript: |
+      az role assignment create --assignee 8cfd2099-7fc0-49f9-9417-71279a532ad2 --role "contributor" --scope /subscriptions/714f1d31-e6fc-4955-acef-4e261636a95e/resourceGroups/zmxs1zu2rsgvnet001/providers/Microsoft.Network/virtualNetworks/Vnetk8
+    useGlobalConfig: true
 
 - task: AzureResourceManagerTemplateDeployment@3
 #deployment of the k8 cluster
