@@ -57,6 +57,7 @@ steps:
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: |
+     az logout
      az login --identity
      az role assignment create --assignee 8cfd2099-7fc0-49f9-9417-71279a532ad2 --role "contributor" --scope /subscriptions/714f1d31-e6fc-4955-acef-4e261636a95e/resourceGroups/zmxs1zu2rsgvnet001/providers/Microsoft.Network/virtualNetworks/Vnetk8
     useGlobalConfig: true
