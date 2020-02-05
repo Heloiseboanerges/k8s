@@ -300,14 +300,14 @@
                             "properties": {
                                 "roleDefinitionId": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Authorization/roleDefinitions/', '3913510d-42f4-4e42-8a64-420c390055eb')]",
                                 "principalId": "[parameters('principalId')]",
-                                "scope": "[concat('/subscriptions/714f1d31-e6fc-4955-acef-4e261636a95e/resourceGroups/zmxs1zu2rsgbonitacrit001/providers/Microsoft.ContainerService/managedClusters/'), parameters('resourceName')]"
+                                "scope": "[concat('/subscriptions/714f1d31-e6fc-4955-acef-4e261636a95e/resourceGroups/zmxs1zu2rsgbonitacrit001/providers/Microsoft.ContainerService/managedClusters/', parameters('resourceName')]"
                             }
                         }
                     ]
                 }
             },
             "dependsOn": [
-                "[concat('/subscriptions/714f1d31-e6fc-4955-acef-4e261636a95e/resourceGroups/zmxs1zu2rsgbonitacrit001/providers/Microsoft.ContainerService/managedClusters/'), parameters('resourceName')]"
+                "[concat('/subscriptions/714f1d31-e6fc-4955-acef-4e261636a95e/resourceGroups/zmxs1zu2rsgbonitacrit001/providers/Microsoft.ContainerService/managedClusters/', parameters('resourceName')]"
             ]
         },
         {
