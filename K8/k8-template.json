@@ -204,7 +204,7 @@
             "location": "[parameters('location')]",
             "name": "[parameters('resourceName')]",
             "properties": {
-                "nodeResourceGroup": "[parameters('RGname'))]",
+                "nodeResourceGroup": "[parameters('RGname')]",
                 "kubernetesVersion": "[parameters('kubernetesVersion')]",
                 "enableRBAC": "[parameters('enableRBAC')]",
                 "dnsPrefix": "[parameters('dnsPrefix')]",
