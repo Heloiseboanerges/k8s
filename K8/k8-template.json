@@ -186,6 +186,12 @@
             "metadata": {
                 "description": "A CIDR notation IP for Docker bridge."
             }
+        },
+        "RGname": {
+            "type": "string",
+            "metadata": {
+                "description": "Resource Group name for the Kubernetes managed cluster."
+            }
         }
     },
     "resources": [
@@ -198,6 +204,7 @@
             "location": "[parameters('location')]",
             "name": "[parameters('resourceName')]",
             "properties": {
+                "nodeResourceGroup": "[parameters('RGname'))]",
                 "kubernetesVersion": "[parameters('kubernetesVersion')]",
                 "enableRBAC": "[parameters('enableRBAC')]",
                 "dnsPrefix": "[parameters('dnsPrefix')]",

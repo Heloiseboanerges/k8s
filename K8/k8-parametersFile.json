@@ -3,8 +3,11 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "resourceName": {
-      "value": "bonitaonk8"
+      "value": "bonitaonk8-01"
     },
+      "RGname": {
+        "value": "bonitaonk8-02"
+      },
     "location": {
       "value": "eastus2"
     },
