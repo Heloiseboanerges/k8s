@@ -1,0 +1,28 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": { 
+    "principalId": {
+      "type": "string",
+      "metadata": {
+        "description": "Specifies the principal ID assigned to the role."
+      }      
+    }
+  },
+  "variables": {
+    "ContributorRole": "[concat(subscription().Id, '/providers/Microsoft.Authorization/roleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c')]"
+  },
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/roleAssignments",
+      "name": "[guid(resourceGroup().id, 'k8cluster')]",
+      "apiVersion": "2018-01-01-preview",
+      "properties": {
+        "roleDefinitionId": "[variables('ContributorRole')]",
+        "principalId": "[parameters('principalId')]",
+        "scope": "[resourceGroup().Id]"
+      }
+    }
+  ],
+  "outputs": {}
+}
