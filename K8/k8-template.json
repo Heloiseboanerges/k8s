@@ -296,7 +296,7 @@
                         {
                             "type": "Microsoft.ContainerService/managedClusters/providers/roleAssignments",
                             "apiVersion": "2018-01-01-preview",
-                            "name": "bonitaonk8/Microsoft.Authorization/8d935fc3-a44b-474d-b95f-c23278e8029b",
+                            "name": "[concat(parameters('resourceName'), '/Microsoft.Authorization/8d935fc3-a44b-474d-b95f-c23278e8029b')]",
                             "properties": {
                                 "roleDefinitionId": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Authorization/roleDefinitions/', '3913510d-42f4-4e42-8a64-420c390055eb')]",
                                 "principalId": "[parameters('principalId')]",
