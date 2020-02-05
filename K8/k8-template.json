@@ -204,7 +204,6 @@
             "location": "[parameters('location')]",
             "name": "[parameters('resourceName')]",
             "properties": {
-                "nodeResourceGroup": "[parameters('RGname')]",
                 "kubernetesVersion": "[parameters('kubernetesVersion')]",
                 "enableRBAC": "[parameters('enableRBAC')]",
                 "dnsPrefix": "[parameters('dnsPrefix')]",
@@ -241,7 +240,8 @@
                             "logAnalyticsWorkspaceResourceID": "[parameters('omsWorkspaceId')]"
                         }
                     }
-                }
+                },
+                "nodeResourceGroup": "[parameters('RGname')]"
             },
             "tags": {}
         },
