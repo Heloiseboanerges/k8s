@@ -39,7 +39,7 @@ steps:
 
 - task: AzureResourceManagerTemplateDeployment@3
 #deployment of the VNET for CNI network mapping on the pods
-  display-name: VNET deployment
+  displayname: VNET deployment
   inputs:
     deploymentScope: 'Resource Group'
     azureResourceManagerConnection: 'Conexion_k8s'
@@ -54,7 +54,7 @@ steps:
 
 - task: AzureResourceManagerTemplateDeployment@3
 #assigning role permissions to Vnet for K8
-  display-name: Role Asignement
+  displayname: Role Asignement
   inputs:
     deploymentScope: 'Resource Group'
     azureResourceManagerConnection: 'Conexion_k8s'
@@ -96,7 +96,7 @@ steps:
     deploymentMode: 'Incremental'
 
 - task: AzureResourceManagerTemplateDeployment@3
-  display-name: Database VM creation
+  displayname: Database VM creation
 #deployment of the DB VM
   inputs:
     deploymentScope: 'Resource Group'
