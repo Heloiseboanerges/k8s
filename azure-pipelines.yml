@@ -78,3 +78,17 @@ steps:
     csmFile: './K8/k8-template.json'
     csmParametersFile: './K8/k8-parametersFile.json'
     deploymentMode: 'Incremental'
+
+- task: AzureResourceManagerTemplateDeployment@3
+#deployment of the storage account for postgres VM
+  inputs:
+    deploymentScope: 'Resource Group'
+    azureResourceManagerConnection: 'Conexion_k8s'
+    subscriptionId: '714f1d31-e6fc-4955-acef-4e261636a95e'
+    action: 'Create Or Update Resource Group'
+    resourceGroupName: 'zmxs1zu2rsgbonitadb001'
+    location: 'East US 2'
+    templateLocation: 'Linked artifact'
+    csmFile: './storage/storage-template.json'
+    csmParametersFile: './storage/storage-parameters.json'
+    deploymentMode: 'Incremental'
