@@ -37,15 +37,6 @@
         },
         "diagnosticsStorageAccountName": {
             "type": "String"
-        },
-        "diagnosticsStorageAccountId": {
-            "type": "String"
-        },
-        "diagnosticsStorageAccountType": {
-            "type": "String"
-        },
-        "diagnosticsStorageAccountKind": {
-            "type": "String"
         }
     },
     "variables": {
@@ -155,17 +146,6 @@
                     }
                 }
             }
-        },
-        {
-            "type": "Microsoft.Storage/storageAccounts",
-            "apiVersion": "2019-06-01",
-            "name": "[parameters('diagnosticsStorageAccountName')]",
-            "location": "[parameters('location')]",
-            "sku": {
-                "name": "[parameters('diagnosticsStorageAccountType')]"
-            },
-            "kind": "[parameters('diagnosticsStorageAccountKind')]",
-            "properties": {}
         }
     ],
     "outputs": {
