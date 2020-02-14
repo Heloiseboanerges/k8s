@@ -67,15 +67,6 @@
         },
         "diagnosticsStorageAccountName": {
             "value": "stabonitadb"
-        },
-        "diagnosticsStorageAccountId": {
-            "value": "Microsoft.Storage/storageAccounts/stabonitadb"
-        },
-        "diagnosticsStorageAccountType": {
-            "value": "Standard_LRS"
-        },
-        "diagnosticsStorageAccountKind": {
-            "value": "Storage"
         }
     }
 }
